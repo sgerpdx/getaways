@@ -1,0 +1,23 @@
+body {
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.placeItemList {
+  background-color: darkolivegreen;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin: 4px;
+}
+
+.placeHeading {
+  list-style-type: none;
+}
