@@ -19,13 +19,13 @@ const Place = ({
       <li className={styles.placeHeading}>
         <h3>{name}</h3>
       </li>
+      <li>
+        <img src={imageThumbnail} height="60" />
+      </li>
       <li>{description}</li>
       <li>{location}</li>
       <li>{pricePerNight}</li>
       <li>{image}</li>
-      <li>
-        <img src={imageThumbnail} height="60" />
-      </li>
       <li>{imageThumbnail}</li>
       <li>{maxGuests}</li>
       <li>{petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</li>

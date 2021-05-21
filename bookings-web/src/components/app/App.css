@@ -7,6 +7,8 @@ body {
 .listContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .placeItemList {
@@ -15,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 360px;
+  height: 360px;
   margin: 4px;
 }
 

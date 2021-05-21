@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Getaways list container component displays an array of unordered lists and their item elements 1`] = `
+<h2>
+  Loading...
+</h2>
+`;

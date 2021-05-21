@@ -5,10 +5,15 @@ import styles from '../components/app/App.css';
 
 const Getaways = () => {
   const [places, setPlaces] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getPlaces().then(setPlaces);
+    getPlaces()
+      .then(setPlaces)
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <h2>Loading...</h2>;
 
   return (
     <section className={styles.listContainer}>
