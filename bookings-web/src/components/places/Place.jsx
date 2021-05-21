@@ -22,15 +22,20 @@ const Place = ({
       <li>
         <img src={imageThumbnail} height="60" />
       </li>
-      <li>{description}</li>
+      <li className={styles.placeDescription}>{description}</li>
       <li>{location}</li>
-      <li>{pricePerNight}</li>
+      <li>${pricePerNight} per night</li>
       <li>{image}</li>
       <li>{imageThumbnail}</li>
-      <li>{maxGuests}</li>
-      <li>{petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</li>
-      {pool ? <li>Has a Pool!</li> : null}
-      {wifi ? <li>Free Wifi</li> : null}
+      <li>Max occupancy: {maxGuests}</li>
+      <li>
+        <ul>
+          {' '}
+          <li>{petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</li>
+          {pool ? <li>Has a Pool!</li> : null}
+          {wifi ? <li>Free Wifi</li> : null}
+        </ul>
+      </li>
     </ul>
   );
 };

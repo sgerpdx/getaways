@@ -19,8 +19,16 @@ body {
   width: 360px;
   height: 360px;
   margin: 4px;
+  padding: 4px;
+  list-style-type: none;
 }
 
-.placeHeading {
+/* .placeHeading {
   list-style-type: none;
+} */
+
+.placeDescription {
+  border: solid 1px rgb(198, 205, 212);
+  border-radius: 4px;
+  padding: 4px;
 }
