@@ -1,6 +1,15 @@
 import React from 'react';
 import Getaways from '../../containers/Getaways';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import Header from '../../containers/Header';
+//import DetailContainer from '../../containers/DetailContainer';
 
 export default function App() {
-  return <Getaways />;
+  return (
+    <Router>
+      <h2>Getaways</h2>
+      <Header />
+      <Route exact path="/" component={Getaways} />
+    </Router>
+  );
 }
