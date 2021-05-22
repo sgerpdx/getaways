@@ -6,8 +6,11 @@ const Header = () => {
     <>
       <Link to={'/'}>
         <h4>Home</h4>
-        <hr></hr>
       </Link>
+      <Link to={'/haunted'}>
+        <h4>Haunted House</h4>
+      </Link>
+      <hr></hr>
     </>
   );
 };
