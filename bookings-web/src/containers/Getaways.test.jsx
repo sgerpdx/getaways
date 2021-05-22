@@ -9,7 +9,7 @@ import Getaways from './Getaways';
 
 //server for mock
 
-describe.skip('Getaways list container component', () => {
+describe('Getaways list container component', () => {
   //spin up and down the server
 
   it('displays an array of unordered lists and their item elements', async () => {
@@ -17,8 +17,8 @@ describe.skip('Getaways list container component', () => {
 
     const loading = await screen.getByText('Loading...');
     expect(loading).toMatchSnapshot();
-    const list = await screen.findByRole('list');
-    expect(list).toMatchSnapshot();
+    //will have to figure out how to test for lists, because the 'list' is actually simply an array of uls, each with tons of lis
+    //maybe test for array?
 
     return waitFor(async () => {
       await screen.getByText('...and there you have it');
