@@ -48,26 +48,8 @@ describe('Getaways list container component', () => {
 
     return waitFor(async () => {
       // await screen.getByText('...and there you have it');
-      expect(resultOne).toEqual([
-        {
-          createdAt: '2021-05-05T18:20:08.703Z',
-          description:
-            'The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality',
-          id: '6092e1d88cb048f1d3300bd9',
-          image: 'http://placeimg.com/1080/800',
-          imageThumbnail: 'http://placeimg.com/400/400',
-          location: '68535 Tyrel Inlet, Davismouth, Georgia, 29036',
-          maxGuests: 21,
-          name: 'Fantastic Park',
-          petFriendly: true,
-          pool: true,
-          pricePerNight: 229,
-          slug: 'fantastic-park',
-          updatedAt: '2021-05-05T18:20:08.703Z',
-          wifi: false,
-          __v: 0,
-        },
-      ]);
+      await screen.getByText(/Maple/);
+      expect;
     });
   });
 });
