@@ -10,6 +10,7 @@ const Header = () => {
       <Link to={'/haunted'}>
         <h4>Haunted House</h4>
       </Link>
+      <span>waiting example for test</span>
       <hr></hr>
     </>
   );

@@ -2,6 +2,7 @@ export const getPlaces = async () => {
   const response = await fetch(`${process.env.BASE_URL}/places`);
   if (response.ok) {
     const result = await response.json();
+    console.log('>>>getPlaces Result:', result[0]);
     return result.map(
       ({
         price_per_night,
