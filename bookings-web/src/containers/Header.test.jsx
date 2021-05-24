@@ -21,6 +21,11 @@ describe('Header container component', () => {
     const heading = await screen.getByText('Home');
     expect(heading).toMatchSnapshot();
 
+    const link = screen.findByRole('link', {
+      name: 'redirect to haunted house',
+    });
+    expect(link).toMatchSnapshot();
+
     return waitFor(() => {
       screen.getByText('waiting example for test');
     });

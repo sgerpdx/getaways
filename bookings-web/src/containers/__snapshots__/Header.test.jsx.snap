@@ -5,3 +5,5 @@ exports[`Header container component displays the correct title text and nav cont
   Home
 </h4>
 `;
+
+exports[`Header container component displays the correct title text and nav controls 2`] = `Promise {}`;

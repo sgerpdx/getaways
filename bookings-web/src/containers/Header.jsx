@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-      <Link to={'/'}>
+      <Link aria-role="redirect to haunted house" to={'/'}>
         <h4>Home</h4>
       </Link>
       <Link to={'/haunted'}>
