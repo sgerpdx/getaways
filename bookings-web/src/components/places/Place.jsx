@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../app/App.css';
+import { Link } from 'react-router-dom';
 
 const Place = ({
+  id,
   name,
   description,
   location,
@@ -20,7 +22,9 @@ const Place = ({
         <h3>{name}</h3>
       </li>
       <li>
-        <img src={imageThumbnail} height="60" />
+        <Link to={`/${id}`}>
+          <img src={imageThumbnail} height="60" />
+        </Link>
       </li>
       <li className={styles.placeDescription}>{description}</li>
       <li>{location}</li>
