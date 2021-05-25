@@ -1,6 +1,7 @@
 require('dotenv').config();
 import React from 'react';
 import { screen, render, waitFor } from '@testing-library/react';
+import { MemoryRouter, Route } from 'react-router-dom';
 //import userEvent from '@testing-library/user-event';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
@@ -20,7 +21,7 @@ const resultOne = [
     name: 'Fantastic Park',
     petFriendly: true,
     pool: true,
-    pricePerNight: 229,
+    price_per_night: 229,
     slug: 'fantastic-park',
     updatedAt: '2021-05-05T18:20:08.703Z',
     wifi: false,
@@ -39,7 +40,14 @@ describe('Getaways list container component', () => {
   afterAll(() => server.close());
 
   it('displays an array of unordered lists and their item elements', async () => {
-    render(<Getaways />);
+    //a memory router is needed for this test to fully work, because of the Link in the Place component:
+    render(
+      <MemoryRouter>
+        <Route path="/">
+          <Getaways match={{ params: { id: '6092e1d88cb048f1d3300bd9' } }} />
+        </Route>
+      </MemoryRouter>
+    );
 
     const loading = await screen.getByText('Loading...');
     expect(loading).toMatchSnapshot();
