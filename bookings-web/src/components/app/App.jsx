@@ -3,6 +3,7 @@ import Getaways from '../../containers/Getaways';
 import DetailContainer from '../../containers/DetailContainer';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Header from '../../containers/Header';
+import Login from '../login/Login';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Route exact path="/" component={Getaways} />
       <Route exact path="/:id" component={DetailContainer} />
+      <Route exact path="/login" component={Login} />
     </Router>
   );
 }
