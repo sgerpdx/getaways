@@ -1,12 +1,14 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, waitFor } from '@testing-library/react';
 import App from './App';
-//jest.useFakeTimers();
+jest.useFakeTimers();
 
-describe.skip('App component', () => {
+describe('App component', () => {
   afterEach(() => cleanup());
   it('renders App', () => {
-    const { asFragment } = render(<App />);
-    expect(asFragment()).toMatchSnapshot();
+    return waitFor(() => {
+      const { asFragment } = render(<App />);
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 });

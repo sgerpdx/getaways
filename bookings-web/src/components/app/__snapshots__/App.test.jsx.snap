@@ -3,6 +3,21 @@
 exports[`App component renders App 1`] = `
 <DocumentFragment>
   <h2>
+    Getaways
+  </h2>
+  <a
+    aria-role="redirect to haunted house"
+    href="/"
+  >
+    <h4>
+      Home
+    </h4>
+  </a>
+  <span>
+    waiting example for test
+  </span>
+  <hr />
+  <h2>
     Loading...
   </h2>
 </DocumentFragment>
