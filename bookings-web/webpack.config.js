@@ -35,6 +35,7 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
+    fallback: { path: false, stream: false, fs: false, http: false },
   },
   module: {
     rules: [
