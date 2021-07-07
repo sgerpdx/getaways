@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header container component displays the correct title text and nav controls 1`] = `
+<h4>
+  Home
+</h4>
+`;
+
+exports[`Header container component displays the correct title text and nav controls 2`] = `Promise {}`;

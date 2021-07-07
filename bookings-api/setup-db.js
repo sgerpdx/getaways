@@ -2,6 +2,9 @@ require('./lib/utils/connect')();
 const mongoose = require('mongoose');
 const faker = require('faker');
 const Place = require('./lib/models/Place');
+//const Booking = require('./lib/models/Booking');
+//const Review = require('./lib/models/Review');
+//const User = require('./lib/models/User');
 
 const placeTypes = [
   'Express',

@@ -18,6 +18,7 @@ const Getaways = () => {
   return (
     <section className={styles.listContainer}>
       <PlaceList places={places} />
+      <h3>...and there you have it</h3>
     </section>
   );
 };
